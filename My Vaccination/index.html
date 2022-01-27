@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="https://biorender.com/img/covid/vaccine.png" />
+    <title>Where's my Vaccine?</title>
+    <style>
+        .container {
+            width: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            flex-direction: column;
+            margin: 0 auto;
+            margin-top: 5vh;
+            border-radius: 2%;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+           
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+        .text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            flex-direction: row;
+        }
+        
+
+        ul li {
+            list-style: none;
+
+            font-size: 1.5em;
+           
+            padding: 10px;
+        }
+
+        
+
+       .container .c3 {
+            font-size: 1em;
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+        }
+
+        .c3 span {
+            font-size: 1.5em;
+            padding-left: 55px;
+
+        }
+        @media (max-width:900px) {
+            .container{
+                width: 100%;
+            }
+            ul li {
+                font-size: 1em;
+                margin: 0 auto;
+                padding: 5px;
+            }
+            .c3 span{
+                font-size: 1em;
+            }
+        }
+        @media (max-width:310px) {
+            .container{
+                width:100%;
+                height: 400px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            ul,.c3 span{
+                padding-left: 10px;
+            }
+            ul li{
+                font-size: 15px;
+                margin: 15px;
+              
+                
+                
+            }
+            ul li .fas{
+                font-size: 22px;
+            }
+            .c3 span{
+                font-size: 15px;
+            }
+
+            
+        }
+        @media (max-width:600px) {
+            .container{
+                width:100%;
+                height: 300px;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+        .head{
+            
+            width:100%;
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            flex-direction: column;
+            margin: 0 auto;
+            
+            border-radius: 4%;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+           box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+            padding:10px;
+            font-size:2vw;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+    <h1>Find Vaccination Centers near you</h1>
+    </div>
+    <div class="searchBox">
+      <input type="text" placeholder="enter your area pincode" id="input" />
+      <button>
+        <img
+          src="https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-search-icon-by-vexels.png"
+          alt="search"
+        />
+      </button>
+    </div>
+
+    
+    <div class="cards"></div>
+
+    <div class="opening">
+      
+      <img src="./vaccine1.jpg" alt="">
+    </div>
+
+
+    <script src="./script.js"></script>
+  </body>
+</html>
